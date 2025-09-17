@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <math.h>
 #include <string.h>
+#include <stdbool.h>
 
 #define sleep_rate 1
 #define MAX_BUFFER_SIZE 33 // one more than 32 so that it can be checked if a number exceeds 31 digits + newline.
