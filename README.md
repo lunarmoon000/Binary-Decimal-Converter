@@ -11,6 +11,8 @@ download the C file to_decimal.c, and write this onto your terminal once you cha
 ```
 gcc to_decimal.c -o to_decimal -lm
 ```
+> Note: If you are on Windows, WSL is reccomended.
+
 this generates a new binary file called to_decimal, to run the program you type this and press enter:
 
 ```
