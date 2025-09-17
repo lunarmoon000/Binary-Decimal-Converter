@@ -4,8 +4,6 @@
 ## General Description
 A Binary to Decimal conversion program coded in C.
 ## Instructions
-download the python file gcd.py, run it on your terminal and you will see this:
-
 download the C file to_decimal.c, and write this onto your terminal once you change your directory to where the C file has ended up in:
 
 ```
