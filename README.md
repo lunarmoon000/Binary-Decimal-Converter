@@ -34,3 +34,50 @@ Here are the list of invalid inputs:
 * any number that is more than 31 digits long (due to limitations of the int data type, this may be changed later on if a different data type is used)
 
 invalid input aside from the beyond 31 ones will not stop the running of the program, it will simply prompt you to try again. Currently an input of greater than 31 digits ends the program to avoid issues with leftover values in the input stream (stdin) in subsequent loops. This may be changed such that the program keeps going if the input stream issue is resolved in subsequent updates.
+
+Example of program running:
+
+``` 
+% ./to_decimal
+Welcome to Binary to Decimal Converter
+
+Enter -1 to exit,
+Insert a binary number: 
+2
+
+invalid digit, number is not binary.
+CONVERSION FAILED.
+Enter -1 to exit,
+Insert a binary number: 
+a
+invalid input, you wrote something non-numeric!
+CONVERSION FAILED.
+Enter -1 to exit,
+Insert a binary number: 
+11101
+--------Converted Number So Far: 0
+current binary digit: 1, add 2^4 (which is 1) to converted decimal.
+--------Converted Number So Far: 1
+current binary digit: 0, add nothing.
+--------Converted Number So Far: 1
+current binary digit: 1, add 2^2 (which is 4) to converted decimal.
+--------Converted Number So Far: 5
+current binary digit: 1, add 2^1 (which is 8) to converted decimal.
+--------Converted Number So Far: 13
+current binary digit: 1, add 2^0 (which is 16) to converted decimal.
+--------Converted Decimal = 29
+Enter -1 to exit,
+Insert a binary number: 
+-1
+```
+```
+% ./to_decimal
+Welcome to Binary to Decimal Converter
+
+Enter -1 to exit,
+Insert a binary number: 
+1111111111111111111111111111111111111111111111
+Maximum Digits Exceeded, must be no more than 31 digits
+Re-run the program to try again.
+
+```
