@@ -29,9 +29,10 @@ int decimal(char* binary_num, int length){
   
         printf("current binary digit: %d", curr_digit);
         if(curr_digit == 1){
-            int curr_power = (int) pow(2,(length - (j+1)));
+            int exponent = (length - (j+1));
+            int curr_power = (int) pow(2, exponent);
             decimal_num += curr_power;
-            printf(", add 2^%d (which is %d) to converted decimal.", j, curr_power);
+            printf(", add 2^%d (which is %d) to converted decimal.", exponent, curr_power);
         } else{
             printf(", add nothing.");
         }
